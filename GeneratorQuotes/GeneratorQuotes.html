@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script>
+	// var FirstWord = ["Безумие", "Храбрость", "Отвага", "Недобросовестность", "Нравоучение", "Равнодушие"]//Генератор цитат
+	// var SecondWord = ["результат", "ошибка", "стезя", "крест", "характеристика", "метка"]
+	// var ThirdWord = ["зелёного", "бесчисленного", "молочного", "охлаждённого", "загадочного", "моллекулярного"]
+	// var ForthWord = ["перечисления", "митинга", "агрегирования", "препарирования", "зондирования", "виляния"]
+	// var Fraze = FirstWord[Math.floor(Math.random() * (FirstWord.length))] + " - это " + SecondWord[Math.floor(Math.random() * (SecondWord.length))] + " " + ThirdWord[Math.floor(Math.random() * (ThirdWord.length))] + " " + ForthWord[Math.floor(Math.random() * (ForthWord.length))]
+
+// соединение фразы через .join(" ")
+	
+	var FirstWords = ["Безумие", "Храбрость", "Отвага", "Недобросовестность", "Нравоучение", "Равнодушие"]//Генератор цитат
+	var SecondWords = ["результат", "ошибка", "стезя", "крест", "характеристика", "метка"]
+	var ThirdWords = ["зелёного", "бесчисленного", "молочного", "охлаждённого", "загадочного", "моллекулярного"]
+	var ForthWords = ["перечисления", "митинга", "агрегирования", "препарирования", "зондирования", "виляния"]
+	
+	var FirstWord = FirstWords[Math.floor(Math.random() * (FirstWords.length))]
+	var SecondWord = SecondWords[Math.floor(Math.random() * (SecondWords.length))]
+	var ThirdWord = ThirdWords[Math.floor(Math.random() * (ThirdWords.length))]
+	var ForthWord = ForthWords[Math.floor(Math.random() * (ForthWords.length))]
+	var Fraze2 = [FirstWord, " - это ", SecondWord, ThirdWord, ForthWord]
+	console.log(Fraze2.join(" "))
+
+
+
+</script>
+	
+</body>
+</html>
+
+
