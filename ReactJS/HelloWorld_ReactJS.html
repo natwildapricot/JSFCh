@@ -71,7 +71,7 @@
             avatar: 'img/avatar26.png'
         },
     ];
-// Выносим информацию, которую содержит контакт в отдельный компонент
+// Put contact info to the separated component
     var Contact = React.createClass({
         render: function() {
             return (
@@ -112,7 +112,7 @@
             <input type="text" className="search-field" onChange={this.handleSearch}/>
             <ul className="contacts-list">
             {
-// Здесь должно отображаться то, что мы отфильтровали (Filtered)
+// Here is filtered result
                 this.state.displayedContacts.map(function(el) {
                     return <Contact
                      key={el.id}
