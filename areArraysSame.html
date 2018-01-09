@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var areArraysSame = function (firstArray, secondArray) 		{
+			
+			if (firstArray.length !== secondArray.length){
+				return false
+				
+			}
+			for (var i = 0; i <= firstArray.length; i++) {
+				if ( firstArray[i] === secondArray[i] ) {
+						return true
+			} else { return false } 
+
+			}
+			}
+
+			areArraysSame([1, 2, 3], [4, 5, 6]);
+
+  			// areArraysSame([1, 2, 3], [1, 2, 3]);
+
+  			// areArraysSame([1, 2, 3], [1, 2, 3, 4]);
+
+
+// Function Name
+
+// var fifthLetter = function (name) { 
+// 	if (name.length < 5) {
+// 	return; }
+//     return "Пятая буква вашего имени: " + name[4] + ".";
+//       };
+// fifthLetter("Николай");
+									
+
+
+	</script>
+
+</body>
+</html>
