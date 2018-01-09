@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.6.15/browser.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id='content'>
+
+    </div>
+<script type="text/babel">
+
+    var CONTACTS = [
+        {
+            id: 1,
+            firstName: 'Jason',
+            email: 'JasonGGodinez@jourrapide.com',
+            phone: '1-202-555-0171',
+            avatar: 'img/avatar12.png'
+        }, {
+            id: 2,
+            firstName: 'Alice Cuper',
+            email: 'Alicecuez@jourrapide.com',
+            phone: '1-202-555-0171',
+            avatar: 'img/avatar13.png'
+        }, {
+            id: 3,
+            firstName: 'Ali Stephanie',
+            email: 'StephanieLPhillips@armyspy.com',
+            phone: '1-202-565-0171',
+            avatar: 'img/avatar14.png'
+        }, {
+            id: 4,
+            firstName: 'Clemente L.',
+            email: 'ClementeLGalvan@jourrapide.com',
+            phone: '1-202-555-0971',
+            avatar: 'img/avatar16.png'
+        }, {
+            id: 5,
+            firstName: 'Gwendolyn P.',
+            email: 'GwendolynPMorales@dayrep.com',
+            phone: '1-202-955-0171',
+            avatar: 'img/avatar18.png'
+        }, {
+            id: 6,
+            firstName: 'Alvin P.',
+            email: 'AlvinPBrennan@dayrep.com',
+            phone: '61 03 8174 4722',
+            avatar: 'img/avatar19.png'
+        }, {
+            id: 7,
+            firstName: 'Jason',
+            email: 'JasonGGodinez@jourrapide.com',
+            phone: '1-202-555-0171',
+            avatar: 'img/avatar21.png'
+        }, {
+            id: 8,
+            firstName: 'Mary J.',
+            email: 'Marynodinez@jourrapide.com',
+            phone: '1-289-555-0171',
+            avatar: 'img/avatar22.png'
+        }, {
+            id: 9,
+            firstName: 'Caron L.',
+            email: 'Caron@jourope.com',
+            phone: '1-402-555-0171',
+            avatar: 'img/avatar26.png'
+        },
+    ];
+// Выносим информацию, которую содержит контакт в отдельный компонент
+    var Contact = React.createClass({
+        render: function() {
+            return (
+                <li className="contact">
+                <img className="contact-image" src={this.props.avatar} width="60px" height="60px"/>
+                    <div className="contact-info">
+                        <div className="contact-name">{this.props.firstName} </div>
+                    <div className="contact-number">{this.props.email}</div>
+
+                </div>
+                </li>
+            );
+        }
+    });
+
+    var ContactsList = React.createClass({
+
+        getInitialState: function() {
+            return {
+                displayedContacts: CONTACTS
+            };
+        },
+
+        handleSearch: function(event) {
+            var searchQuery = event.target.value.toLowerCase();
+            var displayedContacts = CONTACTS.filter(function(el) {
+                var searchValue = el.firstName.toLowerCase();
+                return searchValue.indexOf(searchQuery) !== -1;
+            });
+            this.setState({
+                displayedContacts: displayedContacts
+            });
+        },
+        // What will displayed on the page?
+        render: function() {
+            return (
+            <div className="contacts">
+            <input type="text" className="search-field" onChange={this.handleSearch}/>
+            <ul className="contacts-list">
+            {
+// Здесь должно отображаться то, что мы отфильтровали (Filtered)
+                this.state.displayedContacts.map(function(el) {
+                    return <Contact
+                     key={el.id}
+                     firstName={el.firstName}
+                     email={el.email}
+                     phone={el.phone}
+                     avatar={el.avatar}
+                      />;
+                })
+            }
+            </ul>
+            </div>
+            )
+        }
+    });
+    // Show me!
+    ReactDOM.render(
+        // What?
+        <ContactsList />,
+        // Where?
+        document.getElementById("content")
+    );
+</script>
+</body>
+</html>
