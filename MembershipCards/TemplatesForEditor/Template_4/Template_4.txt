@@ -1,0 +1,143 @@
+<div data-layoutid="layoutid">
+        <!-- .logoAndMacroses -->
+        <div style="
+        width: 346px;
+        height: 187px;
+            ">
+
+            <!-- .macrosesAllContainer -->
+            <div style="
+            width: 304px;
+            height: 157px;
+            margin-left: 19px;
+            margin-top: 17px;
+            ">
+                <!-- .logoContainer -->
+                <div style="float: left;
+                width: 304px;
+                height: 85px;
+                border: 0px solid #000;">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div data-cellinner="innereditablearea1-cellinner" style="width: 304px; height: 85px;">
+                                    <div data-innereditablearea="innereditablearea1">
+                                        <div style="
+                                        width: 196px;
+                                        height: 85px;
+                                        margin: auto;
+                                        overflow: hidden;
+                                        ">
+                                            <img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTk2cHgiIGhlaWdodD0iODVweCIgdmlld0JveD0iMCAwIDE5NiA4NSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4KICAgIDwhLS0gR2VuZXJhdG9yOiBTa2V0Y2ggNDQuMSAoNDE0NTUpIC0gaHR0cDovL3d3dy5ib2hlbWlhbmNvZGluZy5jb20vc2tldGNoIC0tPgogICAgPHRpdGxlPkxvZ280PC90aXRsZT4KICAgIDxkZXNjPkNyZWF0ZWQgd2l0aCBTa2V0Y2guPC9kZXNjPgogICAgPGRlZnM+PC9kZWZzPgogICAgPGcgaWQ9IlN5bWJvbHMiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPgogICAgICAgIDxnIGlkPSJFZGl0b3JfVGVtcGxhdGVfNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEyMC4wMDAwMDAsIC0xMzAuMDAwMDAwKSI+CiAgICAgICAgICAgIDxnIGlkPSJMb2dvNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTIwLjAwMDAwMCwgMTMwLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgPHJlY3QgaWQ9IlJlY3RhbmdsZSIgZmlsbD0iI0ZGRkZGRiIgeD0iMSIgeT0iMCIgd2lkdGg9IjE5NCIgaGVpZ2h0PSI4NCI+PC9yZWN0PgogICAgICAgICAgICAgICAgPHBhdGggZD0iTTE5NS4yLDE5Ljk1NDA0IEMxNzcuMTcxMiwzMS4yMTI0NCAxNjAuMDkxNiw0My41MTM2NCAxNDQuMzM2OCw1Ni43ODU2NCBDMTM0LjA3OTIsNjUuNTQzMjQgMTI1LjQxNCw3NC45NTYwNCAxMTguMTYzNiw4NC4xOTk2NCBMMTk1LjIsODQuMTk5NjQgTDE5NS4yLDE5Ljk1NDA0IFoiIGlkPSJGaWxsLTEiIGZpbGw9IiNGRjg1MTYiPjwvcGF0aD4KICAgICAgICAgICAgICAgIDxwYXRoIGQ9Ik0xNDMuOTk4MDQsMC4yIEwwLjc5OTY0LDAuMiBMMC43OTk2NCw0Mi43MDI4IEMyOC41MDY0NCwzMi40ODcyIDgwLjk1NjA0LDEzLjk0NzIgMTE5LjU3MDg0LDUuMDgyOCBDMTI3Ljc0NTI0LDMuMjA2IDEzNS45NTA4NCwxLjU5MiAxNDMuOTk4MDQsMC4yIiBpZD0iRmlsbC0zIiBmaWxsPSIjRkY4NTE2Ij48L3BhdGg+CiAgICAgICAgICAgICAgICA8cGF0aCBkPSJNMTk1LjIsNS44MDA2NCBMMTk1LjIsMy42MzIyNCBDMTYzLjE3MDgsMTEuMTA5NDQgMTMwLjg4MTIsMjAuOTg2NjQgOTkuNDQsMzMuMzIzODQgQzUxLjQzNzYsNTMuODA3ODQgMTcuNTYyOCw3NC4yMTAyNCAyLjExODgsODQuMjAwMjQgTDc1LjExMzYsODQuMjAwMjQgQzg1LjM2ODgsNzQuNjA1MDQgOTYuMzkyLDY1LjQ3MzA0IDEwOC4xMjkyLDU2LjkzMTQ0IEMxMzUuMDI2LDM3Ljg1MTQ0IDE2My44NzA0LDIwLjk2MDI0IDE5NS4yLDUuODAwNjQiIGlkPSJGaWxsLTYiIGZpbGw9IiNGRjg1MTYiPjwvcGF0aD4KICAgICAgICAgICAgPC9nPgogICAgICAgIDwvZz4KICAgIDwvZz4KPC9zdmc+" alt="Logotype" width="196" height="85">
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- .macrosContainer1 -->
+                <div style="
+                float: left;
+                width: 304px;
+                height: 24px;
+                margin-top: 7px;">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div data-cellinner="innereditablearea2-cellinner" style="width: 304px; height: 26px; ">
+                                    <div data-innereditablearea="innereditablearea2">
+                                        <div style="
+                                        white-space: nowrap;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        width: 304px;
+                                        height: 24px;
+                                        font-size: 20px;
+                                        text-align: center;
+                                        font-family: 'Arial';
+                                        font-weight: bold;
+                                        line-height: 1.1;"
+                                            >
+                                            {Contact_First_Name}{Contact_Last_Name}
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- .macrosContainer2 -->
+                <div style="
+                float: left;
+                width: 304px;
+                height: 16px;
+                margin-top: 5px;
+                margin-bottom: 3px;">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div data-cellinner="innereditablearea3-cellinner" style="width: 304px; height: 14px;">
+                                    <div data-innereditablearea="innereditablearea3">
+                                        <div style="
+                                          white-space: nowrap;
+                                          overflow: hidden;
+                                          text-overflow: ellipsis;
+                                          width: 304px;
+                                          height: 14px;
+                                          font-size: 12px;
+                                          text-align: center;
+                                          line-height: 1.1;
+                                          font-family: 'Arial'
+                                          ">
+                                          Member ID: {User_ID}
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- .macrosContainer3 -->
+                <div style="
+                float: left;
+                width: 304px;
+                height: 14px;">
+                    <table border="0" cellpadding="0" cellspacing="0">
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div data-cellinner="innereditablearea4-cellinner" style="width: 304px; height: 14px;">
+                                    <div data-innereditablearea="innereditablearea4">
+                                        <div style="
+                                        white-space: nowrap;
+                                        overflow: hidden;
+                                        text-overflow: ellipsis;
+                                        width: 304px;
+                                        height: 14px;
+                                        font-size: 12px;
+                                        text-align: center;
+                                        line-height: 1.1;
+                                        font-family: 'Arial';"
+                                            >
+                                            Valid until {Member_Subsequent_Renewal_Date}
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+            </div>
+
+        </div>
+</div>
