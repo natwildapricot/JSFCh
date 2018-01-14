@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="14px" viewBox="0 0 13 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>Atoms/Icon/RecycleBin/16</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 14 13 14 13 0 0 0"></polygon>
+    </defs>
+    <g id="Page-1-v.2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons" transform="translate(-163.000000, -183.000000)">
+            <g id="Atoms/Icon/RecycleBin/16" transform="translate(161.000000, 182.000000)">
+                <g id="Page-1" transform="translate(2.000000, 1.000000)">
+                    <path d="M4.5,12 C4.225,12 4,11.775 4,11.5 L4,4.5 C4,4.225 4.225,4 4.5,4 C4.775,4 5,4.225 5,4.5 L5,11.5 C5,11.775 4.775,12 4.5,12 Z" id="Fill-1" fill="#2C2D30"></path>
+                    <path d="M6,11.5 L6,4.5 C6,4.225 6.225,4 6.5,4 C6.775,4 7,4.225 7,4.5 L7,11.5 C7,11.775 6.775,12 6.5,12 C6.225,12 6,11.775 6,11.5 Z" id="Fill-3" fill="#2C2D30"></path>
+                    <path d="M8,11.5 L8,4.5 C8,4.225 8.225,4 8.5,4 C8.775,4 9,4.225 9,4.5 L9,11.5 C9,11.775 8.775,12 8.5,12 C8.225,12 8,11.775 8,11.5 Z" id="Fill-5" fill="#2C2D30"></path>
+                    <path d="M11,12 C11,12.551 10.552,13 10,13 L3,13 C2.448,13 2,12.551 2,12 L2,4 L1,4 L1,12 C1,13.104 1.896,14 3,14 L10,14 C11.104,14 12,13.104 12,12 L12,4 L11,4 L11,12 Z" id="Fill-7" fill="#2C2D30"></path>
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-10"></g>
+                    <path d="M4,2 L9,2 L9,1 L4,1 L4,2 Z M10,2 L10,1 C10,0.45 9.55,0 9,0 L4,0 C3.45,0 3,0.45 3,1 L3,2 L0,2 L0,3 L13,3 L13,2 L10,2 Z" id="Fill-9" fill="#2C2D30" mask="url(#mask-2)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

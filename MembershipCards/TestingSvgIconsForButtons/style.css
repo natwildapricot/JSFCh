@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'WA-24';
+  src:  url('fonts/WA-24.eot?1vyvcx');
+  src:  url('fonts/WA-24.eot?1vyvcx#iefix') format('embedded-opentype'),
+    url('fonts/WA-24.ttf?1vyvcx') format('truetype'),
+    url('fonts/WA-24.woff?1vyvcx') format('woff'),
+    url('fonts/WA-24.svg?1vyvcx#WA-24') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'WA-24' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Search .path1:before {
+  content: "\e900";
+  color: rgb(216, 216, 216);
+}
+.icon-Search .path2:before {
+  content: "\e901";
+  margin-left: -1em;
+  color: rgb(34, 31, 32);
+}
+.icon-RecycleBin .path1:before {
+  content: "\e902";
+  color: rgb(217, 217, 217);
+}
+.icon-RecycleBin .path2:before {
+  content: "\e903";
+  margin-left: -1em;
+  color: rgb(44, 45, 48);
+}
+.icon-RecycleBin .path3:before {
+  content: "\e904";
+  margin-left: -1em;
+  color: rgb(44, 45, 48);
+}
+.icon-RecycleBin .path4:before {
+  content: "\e905";
+  margin-left: -1em;
+  color: rgb(44, 45, 48);
+}
+.icon-RecycleBin .path5:before {
+  content: "\e906";
+  margin-left: -1em;
+  color: rgb(44, 45, 48);
+}
+.icon-RecycleBin .path6:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(44, 45, 48);
+}
+.icon-RecycleBin .path7:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(44, 45, 48);
+}
