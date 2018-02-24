@@ -22,67 +22,75 @@
             fullName: 'Jason Moor',
             email: 'JasonGGodinez@jourrapide.com',
             phone: '1-202-555-0171',
-            avatar: 'img/avatar12.png'
+            avatar: 'img/1.png',
+            pageLink: 'https://www.gov.uk/'
         }, {
             id: 2,
             fullName: 'Alice Cuper',
             email: 'Alicecuez@jourrapide.com',
             phone: '1-202-555-0171',
-            avatar: 'img/avatar13.png'
+            avatar: 'img/2.png',
+            pageLink: 'https://www.gov.uk/'
         }, {
             id: 3,
             fullName: 'Marilyn Brady',
             email: 'StephanieLPhillips@armyspy.com',
             phone: '1-202-565-0171',
-            avatar: 'img/avatar14.png'
+            avatar: 'img/3.png',
+            pageLink: 'https://www.gov.uk/'
         }, {
             id: 4,
             fullName: 'Corey Warren',
             email: 'ClementeLGalvan@jourrapide.com',
             phone: '1-202-555-0971',
-            avatar: 'img/avatar16.png'
+            avatar: 'img/4.png',
+            pageLink: 'https://www.gov.uk/'
         }, {
             id: 5,
             fullName: 'Floyd Joseph',
             email: 'GwendolynPMorales@dayrep.com',
             phone: '1-202-955-0171',
-            avatar: 'img/avatar18.png'
+            avatar: 'img/5.png',
+            pageLink: 'https://www.gov.uk/'
         }, {
             id: 6,
             fullName: 'Irving	Stone',
             email: 'AlvinPBrennan@dayrep.com',
             phone: '61 03 8174 4722',
-            avatar: 'img/avatar19.png'
+            avatar: 'img/6.png',
+            pageLink: 'https://www.gov.uk/'
         }, {
             id: 7,
             fullName: 'Jason Chank',
             email: 'JasonGGodinez@jourrapide.com',
             phone: '1-202-555-0171',
-            avatar: 'img/avatar21.png'
+            avatar: 'img/7.png',
+            pageLink: 'https://www.gov.uk/'
         }, {
             id: 8,
             fullName: 'Pat Hoffman',
             email: 'Marynodinez@jourrapide.com',
             phone: '1-289-555-0171',
-            avatar: 'img/avatar22.png'
+            avatar: 'img/8.png',
+            pageLink: 'https://www.gov.uk/'
         }, {
             id: 9,
-            fullName: 'Caron L. Green',
+            fullName: 'Rosa Smithson',
             email: 'Caron@jourope.com',
             phone: '1-402-555-0171',
-            avatar: 'img/avatar26.png'
+            avatar: 'img/rosa.png',
+            pageLink: 'https://www.gov.uk/'
         },
     ];
 // Put contact info to the separated component
     var Contact = React.createClass({
         render: function() {
             return (
-                <li className="contact">
+                <li className="contact" onClick={() => { console.log(this.props.pageLink); window.location.href = this.props.pageLink; event.stopPropagation(); }}>
                 <img className="contact-image" src={this.props.avatar} width="60px" height="60px"/>
                     <div className="contact-info">
                         <div className="contact-name">{this.props.fullName} </div>
                     <div className="contact-number">{this.props.email}</div>
-
                 </div>
                 </li>
             );
@@ -93,13 +101,13 @@
 
         getInitialState: function() {
             return {
-                displayedContacts: CONTACTS
+                displayedContacts: []
             };
         },
 
         handleSearch: function(event) {
             var searchQuery = event.target.value.toLowerCase();
-            var displayedContacts = CONTACTS.filter(function(el) {
+            var displayedContacts = (searchQuery ? CONTACTS : []).filter(function(el) {
                 var searchValue = el.fullName.toLowerCase();
                 return searchValue.indexOf(searchQuery) !== -1;
             });
@@ -107,11 +115,34 @@
                 displayedContacts: displayedContacts
             });
         },
+        // onFocus: function(event)
+        // {
+        //     var searchQuery = event.target.value.toLowerCase();
+        //
+        //     if (!searchQuery)
+        //     {
+        //         this.setState({
+        //             displayedContacts: CONTACTS
+        //         });
+        //     }
+        // },
+        // onBlur: function(event)
+        // {
+        //     var searchQuery = event.target.value.toLowerCase();
+        //     console.log(event);
+        //
+        //     if (!searchQuery)
+        //     {
+        //         // this.setState({
+        //         //     displayedContacts: []
+        //         // });
+        //     }
+        // },
         // What will displayed on the page?
         render: function() {
             return (
             <div className="contacts">
-            <input type="text" className="search-field" onChange={this.handleSearch}/>
+            <input type="text" className="search-field" onChange={this.handleSearch} placeholder="Type something..." />
             <ul className="contacts-list">
             {
 // Here is filtered result
@@ -122,6 +153,7 @@
                      email={el.email}
                      phone={el.phone}
                      avatar={el.avatar}
+                     pageLink={el.pageLink}
                       />;
                 })
             }

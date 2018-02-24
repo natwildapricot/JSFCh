@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        #gallery {
+            width: 860px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #gallery .photos img{
+            width: 100%;
+            display: none;
+        }
+        #gallery .photos img:first-child {
+            display: block;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="gallery">
+        <div class="photos">
+            <img src="img/1.jpg" alt="">
+            <img src="img/2.jpg" alt="">
+            <img src="img/3.jpg" alt="">
+            <img src="img/4.jpg" alt="">
+            <img src="img/5.jpg" alt="">
+            <img src="img/6.jpg" alt="">
+            <img src="img/7.jpg" alt="">
+        </div>
+        <div class="buttons">
+            <input type="button" value="Back" class="prev">
+            <input type="button" value="Forward" class="next">
+        </div>
+
+    </div>
+    <script src="js/Script.js"></script>
+
+
+</body>
+</html>
