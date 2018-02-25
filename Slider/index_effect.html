@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        /* * {
+            border: dashed;
+            border-width: thin;
+            border-color: #B21616;
+        } */
+        #gallery {
+            width: 860px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        #gallery .photos {
+        position: relative;
+        height: 670px;
+        }
+
+        #gallery .photos img{
+            width: 100%;
+            position: absolute;
+            left: 0;
+            opacity: 0;
+            transition: opacity 2s;
+        }
+
+        #gallery .photos img.showed {
+            opacity: 1;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="gallery">
+        <div class="photos" >
+            <img src="img/1.jpg" class="showed">
+            <img src="img/2.jpg" alt="">
+            <img src="img/3.jpg" alt="">
+            <img src="img/4.jpg" alt="">
+            <img src="img/5.jpg" alt="">
+            <img src="img/6.jpg" alt="" >
+        </div>
+        <div class="buttons">
+            <input type="button" value="Back" class="prev">
+            <input type="button" value="Forward" class="next">
+        </div>
+
+    </div>
+
+
+
+</body>
+<script>
+var btn_prev = document.querySelector('#gallery .buttons .prev');
+var btn_next = document.querySelector('#gallery .buttons .next');
+
+// Function wich give us a massive
+var images = document.querySelectorAll('#gallery .photos img');
+var i=0
+console.log(i)
+
+btn_prev.onclick = function(){
+    images[i].className = '';
+    i--;
+    if (i<0) {
+        i = images.length - 1;
+    }
+    images[i].className = 'showed';
+
+}
+
+btn_next.onclick = function(){
+    images[i].className = '';
+    i++; if (i>=images.length) {
+    i=0;
+}
+    images[i].className = 'showed';
+}
+
+</script>
+
+</html>
